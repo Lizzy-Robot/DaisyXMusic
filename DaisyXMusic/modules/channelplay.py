@@ -470,7 +470,7 @@ async def play(_, message: Message):
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/f6086f8909fbfeb0844f2.png"
+        thumb_name = "https://telegra.ph/file/c49db341c05921a48dd6f.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -615,7 +615,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ <b>Playing</b> the song requested by {} via Youtube Music 😎 in Linked Channel".format(
+            caption="▶️ <b>Playing</b> the song requested by {} via Queen Music 😎 in Linked Channel".format(
                 message.from_user.mention()
             ),
         )
@@ -644,7 +644,7 @@ async def deezer(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "DaisyMusic"
+        user.first_name = "QueenMusic"
     usar = user
     wew = usar.id
     try:
@@ -808,7 +808,7 @@ async def jiosaavn(client: Client, message_: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your channel due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @DaisyXmusic to your Group and try again</b>",
+                        "\n\nOr manually add @Raksha_Backup to your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -846,7 +846,7 @@ async def jiosaavn(client: Client, message_: Message):
             ],
             [
                 InlineKeyboardButton(
-                    text="Join Updates Channel", url=f"https://t.me/{updateschannel}"
+                    text="Join Support Group", url=f"https://t.me/{updateschannel}"
                 )
             ],
             [InlineKeyboardButton(text="❌ Close", callback_data="ccls")],
